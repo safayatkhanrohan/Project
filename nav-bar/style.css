@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-bar {
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  width: 240px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+nav {
+  position: fixed;
+  height: max-content;
+  background-color: aqua;
+  overflow-y: scroll;
+  height: 150px;
+}
+
+.profile-img {
+  width: 70px;
+  border-radius: 50%;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  padding: 1rem;
+  border-bottom: 1px solid;
+  border-color: #eeeeee;
+}
+
+.user-id {
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+ul {
+  margin-top: 15px;
+  list-style: none;
+}
+
+li {
+  line-height: 3rem;
+}
+
+ul li a {
+  padding: 1em;
+  display: block;
+  text-decoration: none;
+  color: black;
+  width: 100%;
+}
+
+li:hover {
+  background-color: #eeeeee;
+}
+
+input {
+  display: none;
+  visibility: hidden;
+  appearance: none;
+}
+
+.toggle {
+  position: absolute;
+  height: 10px;
+  width: 22px;
+  z-index: 1;
+  cursor: pointer;
+  top: 20px;
+  left: 35px;
+}
+
+.toggle .common {
+  position: absolute;
+  background-color: #ffffff;
+  height: 1px;
+  width: 100%;
+}
+
+.toggle .top_line {
+  top: 10%;
+}
+
+.toggle .mid_line {
+  top: 50%;
+}
+
+.toggle .bottom_line {
+  bottom: 0%;
+}
