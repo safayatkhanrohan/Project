@@ -1,0 +1,175 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #efefef;
+  position: relative;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+header {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem;
+  background-color: #3f51b5;
+  color: #ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px #2929296a;
+}
+
+.logo {
+  line-height: 26px;
+}
+
+.logo h1 {
+  font-weight: 900;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Toggle button */
+
+input {
+  display: none;
+  visibility: hidden;
+  appearance: none;
+}
+
+.toggle {
+  position: absolute;
+  height: 10px;
+  width: 22px;
+  z-index: 1;
+  cursor: pointer;
+  left: 35px;
+}
+
+.toggle .common {
+  position: absolute;
+  background-color: #ffffff;
+  height: 1px;
+  width: 100%;
+}
+
+.toggle .top_line {
+  top: 10%;
+}
+
+.toggle .mid_line {
+  top: 50%;
+}
+
+.toggle .bottom_line {
+  bottom: 0%;
+}
+
+/* Menu */
+.sticky_menu {
+  position: relative;
+  background-color: rgba(178, 34, 34, 0.307);
+  height: 55px;
+  z-index: -1000;  
+}
+
+nav {
+  z-index: 1;
+  margin-top: 4px;
+  width: 240px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  height: 100vh;
+  overflow-y: scroll;
+  padding-bottom: 20px;
+  scrollbar-width: thin;
+}
+
+.profile-img {
+  width: 70px;
+  border-radius: 50%;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  padding: 1rem;
+  border-bottom: 1px solid;
+  border-color: #eeeeee;
+}
+
+.user-id a {
+  color: blue;
+}
+
+.user-id p {
+  font-size: 12px;
+}
+
+.user-id {
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+ul {
+  margin-top: 15px;
+  list-style: none;
+}
+
+li {
+  line-height: 1rem;
+}
+
+ul li a {
+  padding: 1em;
+  display: block;
+  text-decoration: none;
+  color: black;
+  width: 100%;
+}
+
+li:hover {
+  background-color: #eeeeee;
+}
+
+/* Box container */
+
+.container {
+  margin-top: 20px;
+  margin-left: 250px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 10px #2929296a;
+}
+
+.box-1 {
+  background-color: #fff;
+  padding: 1rem;
+  padding-bottom: 1rem;
+  line-height: 2rem;
+  display: flex;
+}
+
+.icon {
+  position: absolute;
+  right: 35px
+}
+
+.box-2 {
+  background-color: #3f51b5;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 13px;
+}
